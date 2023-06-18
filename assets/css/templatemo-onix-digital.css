@@ -339,6 +339,11 @@ header
   transition: all 0.3s ease 0s;
 }
 
+.logo {
+  display: flex;
+  width: 200px;
+}
+
 .background-header .main-nav .logo {
   line-height: 75px;
 }
@@ -870,7 +875,7 @@ Banner Style
 
 .main-banner:after {
   content: '';
-  background-image: url(../images/baner-dec-left.png);
+  /* background-image: url(../images/baner-dec-left.png); */
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -1017,7 +1022,7 @@ Services Style
 }
 
 .our-services .item {
-  text-align: center;
+  text-align: left;
   margin: 15px;
   border-radius: 20px;
   background-color: #fff;

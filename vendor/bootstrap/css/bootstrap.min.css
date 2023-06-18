@@ -639,6 +639,9 @@ progress {
   margin-right: calc(var(--bs-gutter-x) / -2);
   margin-left: calc(var(--bs-gutter-x) / -2);
 }
+.space-between{
+  justify-content: space-between;
+}
 .row > * {
   flex-shrink: 0;
   width: 100%;
