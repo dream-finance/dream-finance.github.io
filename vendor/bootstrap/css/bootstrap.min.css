@@ -642,6 +642,9 @@ progress {
 .space-between{
   justify-content: space-between;
 }
+.space-around {
+  justify-content: space-around;
+}
 .row > * {
   flex-shrink: 0;
   width: 100%;

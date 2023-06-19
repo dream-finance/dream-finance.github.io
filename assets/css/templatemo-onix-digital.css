@@ -389,7 +389,7 @@ header
 
 .header-area .main-nav .nav li:last-child .main-red-button-hover a:hover,
 .background-header .main-nav .nav li:last-child .main-red-button-hover a:hover {
-  background-color: #8D5D7D!important;
+  /* background-color: #8D5D7D!important; */
 }
 
 .header-area .main-nav .nav li a {
@@ -868,7 +868,7 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 236px 0px 130px 0px;
+  padding: 150px 0px 50px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -1036,6 +1036,7 @@ Services Style
   color: #2a2a2a;
   margin-bottom: 30px;
   line-height: 30px;
+  text-align: center;
 }
 
 .our-services .item .icon {
@@ -1407,7 +1408,8 @@ Subscribe
 }
 
 .subscribe .inner-content {
-  background-image: url(../images/subscribe-bg.png);
+  /* background-image: url(../images/subscribe-bg.png); */
+  background-image: linear-gradient(to bottom, #5d8d6d, #3f907f, #0e9296, #0091ad, #008ec0);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1415,6 +1417,7 @@ Subscribe
   padding: 60px 0px;
   width: 100%;
   position: relative;
+  text-align: center;
 }
 
 .subscribe .inner-content:after {
@@ -1464,10 +1467,10 @@ Subscribe
   color: #afafaf;
 }
 
-.subscribe .inner-content form button {
+.subscribe .inner-content button {
   display: inline-block;
-  background-color: #008EC0;
-  font-size: 15px;
+  background-color: #243f42;
+  font-size: 18px;
   font-weight: 400;
   color: #fff;
   width: 20%;
@@ -1479,10 +1482,11 @@ Subscribe
   border: none;
   text-align: center;
   transition: all .3s;
+  border: 1px solid #618b72;
 }
 
-.subscribe .inner-content form button:hover {
-  background-color: #5d8d6d;
+.subscribe .inner-content button:hover {
+  border: 1px solid #cfd8d5;
 }
 
 
@@ -1719,7 +1723,13 @@ contact
   margin-right: 15px;
 }
 
-.contact-us .info span a {
+.contact-us .info span p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-us .info span p a{
   color: #5d8d6d;
   font-size: 14px;
   font-weight: 400;
