@@ -93,6 +93,10 @@ ul, li {
   list-style: none;
 }
 
+.list li {
+  list-style: disc;
+}
+
 header, nav, section, article, aside, footer, hgroup {
   display: block;
 }
@@ -204,7 +208,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: #5d8d6d;
-  opacity: 0.15;
+  opacity: 0.5;
 }
 
 .main-blue-button a {
@@ -1473,7 +1477,7 @@ Subscribe
   font-size: 18px;
   font-weight: 400;
   color: #fff;
-  width: 20%;
+  width: auto;
   margin-right: 10px;
   text-transform: capitalize;
   padding: 12px 20px;
@@ -1699,6 +1703,8 @@ contact
   position: relative;
   z-index: 5;
   display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .contact-us .info span {
