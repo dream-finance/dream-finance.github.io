@@ -1,0 +1,50 @@
+.no-scroll {
+    overflow: hidden;
+}
+
+.disclaimer-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+.disclaimer {
+    width: 90%;
+    padding: 10px;
+    background-color: wheat;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.disclaimer > button {
+    all: unset;
+    float: right;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+
+.disclaimer-text > p {
+    font-size: large;
+}
+
+.disclaimer-text > div {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.danger-text {
+    color: #dc3545;
+}
+
+@media only screen and (min-width: 768px) {
+    .disclaimer {
+        width: 50%;
+    }
+  }

@@ -16,12 +16,16 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.ico">
+
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-onix-digital.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/disclaimer.css">
 <!--
 
 TemplateMo 565 Onix Digital
@@ -79,6 +83,31 @@ https://templatemo.com/tm-565-onix-digital
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
+
+  <div class="disclaimer-container">
+    <div class="disclaimer">
+      <button  id="close-disclaimer">
+        X
+      </button>
+      <div class="disclaimer-text">
+        <div>
+          <span class="danger-text">
+            Important notice :
+          </span> 
+          <span>
+            Beware of Fraudulent Loan offers.
+          </span>
+
+        </div>
+        <p>
+          Attention please, <br />
+          We want to clarify that, Dream Financial Services,neither provides Loan facilities nor asks for cash payments for the same, and any such offers claiming to be from us are fraudulent. <br />
+          We are committed to your safety and security. <br />
+          Thank you for your cooperation.
+        </p>
+      </div>
+    </div>
+  </div>
 
   <div class="main-banner" id="top">
     <div class="container">
@@ -715,7 +744,7 @@ https://templatemo.com/tm-565-onix-digital
           <div class="section-heading">
             <h2>Feel free to <em>React Out</em> to <span>Us.</span></h2>
             <div id="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3662.5595770545356!2d85.34503411497417!3d23.36796558477922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDIyJzA0LjciTiA4NcKwMjAnNTAuMCJF!5e0!3m2!1sen!2sin!4v1687187125949!5m2!1sen!2sin" width="75%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.116539487492!2d86.2655912!3d24.202697699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f156057469bc69%3A0xc62dfa6b849df7d7!2sRani%20Sati%20Mandir%20PACHAMBA!5e0!3m2!1sen!2sin!4v1702998725992!5m2!1sen!2sin" width="75%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -730,9 +759,17 @@ https://templatemo.com/tm-565-onix-digital
           <span>
             <i class="fa fa-envelope"></i> 
             <p>
-            <a href="mailto:contact@dreamfinance.co.in">contact@dreamfinance.co.in</a></span>
-            <a href="mailto:financedream7@gmail.com">financedream7@gmail.com</a></span>
+            <a href="mailto:contact@dreamfinance.co.in">contact@dreamfinance.co.in</a>
+            <a href="mailto:financedream7@gmail.com">financedream7@gmail.com</a>
             </p> 
+          </span>
+          <span>
+            <i class="fa fa-building"></i> 
+            <p style="color: #5d8d6d;">
+              Near Rani Sati Mandir, Panchamba, <br />
+              Giridih - 815301, Jharkhand
+            </p> 
+          </span>
         </div> 
         <!-- <div class="col-lg-5 align-self-center">
           <form id="contact" action="" method="get">
@@ -867,6 +904,21 @@ https://templatemo.com/tm-565-onix-digital
           $(".naccs ul").height(listItemHeight + "px");
         }
     });
+
+    
+
+    if($(document).find('.disclaimer-container')){
+        window.scrollTo(0,0);
+        $('html').addClass("no-scroll");
+    }
+
+
+    // show / hide disclaimer
+    $('#close-disclaimer').click(function(){
+      $('.disclaimer-container').hide();
+      $('html').removeClass("no-scroll");
+    })
+
   </script>
 </body>
 </html>
